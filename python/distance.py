@@ -3,8 +3,8 @@ import time
 
 PIN_TRIGGER_LEFT = 24
 PIN_ECHO_LEFT = 22
-PIN_TRIGGER_RIGHT = 23
-PIN_ECHO_RIGHT = 5
+PIN_TRIGGER_RIGHT = 5
+PIN_ECHO_RIGHT = 23
 
 class Distance:
     def __init__(self):
@@ -16,6 +16,9 @@ class Distance:
         GPIO.setup(PIN_ECHO_RIGHT, GPIO.IN) 
         GPIO.output(PIN_TRIGGER_RIGHT, True)
         
+    def __del__(self):
+        GPIO.cleanup() 
+
     def get_distance_left(self):
         try:          
             GPIO.output(PIN_TRIGGER_LEFT, False)

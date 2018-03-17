@@ -1,0 +1,17 @@
+Installing AdaFruit Neopixels for LED strip:
+https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+
+Raspberry Pi as a stand alone Wifi Access Point:
+https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
+
+PyCam stream to www:
+https://github.com/jacksonliam/mjpg-streamer
+Streamt ein video in einen spezifizierten www ordner der html und java script dateien enthält.
+Ist ein fork von MJPG-Streamer, welcher nicht weiter entwickelt wird.
+
+Python in the browser:
+https://transcrypt.org/documentation
+Funktioniert recht einfach. Braucht aber auch JavaScript
+
+
+
