@@ -8,10 +8,15 @@ PyCam stream to www:
 https://github.com/jacksonliam/mjpg-streamer
 Streamt ein video in einen spezifizierten www ordner der html und java script dateien enthält.
 Ist ein fork von MJPG-Streamer, welcher nicht weiter entwickelt wird.
+Mit den Befehlen:
+export LD_LIBRARY_PATH=. 
+./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so"
+wird der stream gestartet
 
 Python in the browser:
 https://transcrypt.org/documentation
 Funktioniert recht einfach. Braucht aber auch JavaScript
+Mit dem Befehl 'transcrypt -b -m -n hello.py' wird hello.py in javascript umgewandelt.
 
 
 

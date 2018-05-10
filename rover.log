@@ -1,0 +1,38 @@
+bla bla
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "__init__.py", line 17, in controls
+    return render_template("controls.html")#, dir=buz)
+  File "/usr/local/lib/python3.4/dist-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/usr/local/lib/python3.4/dist-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/RoverApp/RoverApp/templates/controls.html", line 1, in top-level template code
+    {% extends "template.html" %}
+  File "/var/www/RoverApp/RoverApp/templates/template.html", line 28, in top-level template code
+    {% block body %}{% endblock %}
+  File "/var/www/RoverApp/RoverApp/templates/controls.html", line 6, in block "body"
+    Current dir: {{buz.run(15000)}} !
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'buz' is undefined
+bla bla
+bla bla
