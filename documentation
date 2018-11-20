@@ -20,3 +20,5 @@ Mit dem Befehl 'transcrypt -b -m -n hello.py' wird hello.py in javascript umgewa
 
 
 
+Installation von neopixels mit ciruitPython
+https://learn.adafruit.com/neopixels-on-raspberry-pi/python-usage#
