@@ -1,6 +1,3 @@
-Installing AdaFruit Neopixels for LED strip:
-https://learn.adafruit.com/neopixels-on-raspberry-pi/software
-
 Raspberry Pi as a stand alone Wifi Access Point:
 https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
 
@@ -13,12 +10,7 @@ export LD_LIBRARY_PATH=.
 ./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so"
 wird der stream gestartet
 
-Python in the browser:
-https://transcrypt.org/documentation
-Funktioniert recht einfach. Braucht aber auch JavaScript
-Mit dem Befehl 'transcrypt -b -m -n hello.py' wird hello.py in javascript umgewandelt.
-
-
-
 Installation von neopixels mit ciruitPython
 https://learn.adafruit.com/neopixels-on-raspberry-pi/python-usage#
+
+(Installing AdaFruit Neopixels for LED strip: https://learn.adafruit.com/neopixels-on-raspberry-pi/software)
